@@ -103,6 +103,7 @@
  * CIPHER    6   8
  * SSL       6   23 (Started from top)
  * SSL       7   32
+ * PKCS7     7   5
  *
  * Module dependent error code (5 bits 0x.00.-0x.F8.)
  */

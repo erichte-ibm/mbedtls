@@ -698,6 +698,11 @@
 #error "MBEDTLS_HAVE_INT32/MBEDTLS_HAVE_INT64 and MBEDTLS_HAVE_ASM cannot be defined simultaneously"
 #endif /* (MBEDTLS_HAVE_INT32 || MBEDTLS_HAVE_INT64) && MBEDTLS_HAVE_ASM */
 
+#if ( ( defined(MBEDTLS_PKCS7_USE_C) ) && ( !defined(MBEDTLS_ASN1_PARSE_C) ) && \
+    ( !defined(MBEDTLS_OID_C) ) && ( !defined(MBEDTLD_PK_PARSE_C) ) && \
+    ( !defined(MBEDTLS_X509_CRT_PARSE_C)) && (!defined( MBEDTLS_BIGNUM_C) ))
+#error  "MBEDTLS_PKCS7_USE_C is defined, but not all prerequisites"
+#endif
 /*
  * Avoid warning from -pedantic. This is a convenient place for this
  * workaround since this is included by every single file before the

@@ -1,0 +1,20 @@
+/* BEGIN_HEADER */
+/* END_HEADER */
+
+/* BEGIN_DEPENDENCIES
+ * 
+ * END_DEPENDENCIES
+ */
+
+/* BEGIN_CASE */
+void pkcs7_invalid_param( )
+{
+}
+/* END_CASE */
+
+/* BEGIN_CASE */
+void mbedtls_pkcs7_verify( )
+{
+}
+/* END_CASE */
+
